@@ -1,0 +1,306 @@
+[
+  {
+    "expertId": "expert-1",
+    "expertName": "김우형",
+    "expertRole": "영업",
+    "sessions": [
+      {
+        "operatorName": "이지웅",
+        "timeRange": "13:30 ~ 14:10",
+        "status": "완료",
+        "rowIndex": 0
+      },
+      {
+        "operatorName": "장민혁",
+        "timeRange": "14:10 ~ 14:50",
+        "status": "시작 전",
+        "rowIndex": 1
+      },
+      {
+        "operatorName": "김하윤",
+        "timeRange": "14:50 ~ 15:30",
+        "status": "완료",
+        "rowIndex": 2
+      }
+    ],
+    "sessionCount": 3
+  },
+  {
+    "expertId": "expert-2",
+    "expertName": "김주만",
+    "expertRole": "마케팅",
+    "sessions": [
+      {
+        "operatorName": "이지은",
+        "timeRange": "13:30 ~ 13:50",
+        "status": "완료",
+        "rowIndex": 0
+      },
+      {
+        "operatorName": "김효민",
+        "timeRange": "13:50 ~ 14:10",
+        "status": "완료",
+        "rowIndex": 1
+      },
+      {
+        "operatorName": "표다영",
+        "timeRange": "14:10 ~ 14:30",
+        "status": "완료",
+        "rowIndex": 2
+      },
+      {
+        "operatorName": "박정현",
+        "timeRange": "14:30 ~ 14:50",
+        "status": "완료",
+        "rowIndex": 3
+      },
+      {
+        "operatorName": "김규원",
+        "timeRange": "14:50 ~ 15:10",
+        "status": "완료",
+        "rowIndex": 4
+      }
+    ],
+    "sessionCount": 5
+  },
+  {
+    "expertId": "expert-3",
+    "expertName": "김진환",
+    "expertRole": "데이터사이언스",
+    "sessions": [
+      {
+        "operatorName": "염정",
+        "timeRange": "13:30 ~ 13:50",
+        "status": "시작 전",
+        "rowIndex": 0
+      },
+      {
+        "operatorName": "김상원",
+        "timeRange": "13:50 ~ 14:10",
+        "status": "완료",
+        "rowIndex": 1
+      },
+      {
+        "operatorName": "남민주",
+        "timeRange": "14:10 ~ 14:30",
+        "status": "완료",
+        "rowIndex": 2
+      },
+      {
+        "operatorName": "박영서",
+        "timeRange": "14:30 ~ 14:50",
+        "status": "완료",
+        "rowIndex": 3
+      }
+    ],
+    "sessionCount": 4
+  },
+  {
+    "expertId": "expert-4",
+    "expertName": "송일선",
+    "expertRole": "HR",
+    "sessions": [
+      {
+        "operatorName": "박정인",
+        "timeRange": "13:30 ~ 13:50",
+        "status": "완료",
+        "rowIndex": 0
+      },
+      {
+        "operatorName": "유다영",
+        "timeRange": "13:50 ~ 14:10",
+        "status": "완료",
+        "rowIndex": 1
+      },
+      {
+        "operatorName": "김효민",
+        "timeRange": "14:10 ~ 14:30",
+        "status": "완료",
+        "rowIndex": 2
+      },
+      {
+        "operatorName": "고경연",
+        "timeRange": "14:30 ~ 14:50",
+        "status": "완료",
+        "rowIndex": 3
+      },
+      {
+        "operatorName": "남현진",
+        "timeRange": "14:50 ~ 15:10",
+        "status": "완료",
+        "rowIndex": 4
+      },
+      {
+        "operatorName": "박은서",
+        "timeRange": "15:10 ~ 15:30",
+        "status": "완료",
+        "rowIndex": 5
+      }
+    ],
+    "sessionCount": 6
+  },
+  {
+    "expertId": "expert-5",
+    "expertName": "안창배",
+    "expertRole": "데이터사이언스",
+    "sessions": [
+      {
+        "operatorName": "김유진",
+        "timeRange": "13:30 ~ 13:50",
+        "status": "완료",
+        "rowIndex": 0
+      },
+      {
+        "operatorName": "우은비",
+        "timeRange": "13:50 ~ 14:10",
+        "status": "완료",
+        "rowIndex": 1
+      },
+      {
+        "operatorName": "손정빈",
+        "timeRange": "14:10 ~ 14:30",
+        "status": "완료",
+        "rowIndex": 2
+      },
+      {
+        "operatorName": "윤서희",
+        "timeRange": "14:30 ~ 14:50",
+        "status": "완료",
+        "rowIndex": 3
+      }
+    ],
+    "sessionCount": 4
+  },
+  {
+    "expertId": "expert-6",
+    "expertName": "임태균",
+    "expertRole": "PM",
+    "sessions": [
+      {
+        "operatorName": "손정빈",
+        "timeRange": "13:30 ~ 13:50",
+        "status": "완료",
+        "rowIndex": 0
+      },
+      {
+        "operatorName": "양혜원",
+        "timeRange": "13:50 ~ 14:10",
+        "status": "완료",
+        "rowIndex": 1
+      },
+      {
+        "operatorName": "이서하",
+        "timeRange": "14:10 ~ 14:30",
+        "status": "완료",
+        "rowIndex": 2
+      },
+      {
+        "operatorName": "우은비",
+        "timeRange": "14:30 ~ 14:50",
+        "status": "시작 전",
+        "rowIndex": 3
+      },
+      {
+        "operatorName": "장민혁",
+        "timeRange": "14:50 ~ 15:10",
+        "status": "완료",
+        "rowIndex": 4
+      },
+      {
+        "operatorName": "남민주",
+        "timeRange": "15:10 ~ 15:30",
+        "status": "완료",
+        "rowIndex": 5
+      }
+    ],
+    "sessionCount": 6
+  },
+  {
+    "expertId": "expert-7",
+    "expertName": "최원준",
+    "expertRole": "AI/개발",
+    "sessions": [
+      {
+        "operatorName": "함형빈",
+        "timeRange": "13:30 ~ 13:50",
+        "status": "완료",
+        "rowIndex": 0
+      },
+      {
+        "operatorName": "김유진",
+        "timeRange": "13:50 ~ 14:10",
+        "status": "완료",
+        "rowIndex": 1
+      },
+      {
+        "operatorName": "염정",
+        "timeRange": "14:10 ~ 14:30",
+        "status": "완료",
+        "rowIndex": 2
+      },
+      {
+        "operatorName": "이서하",
+        "timeRange": "14:30 ~ 14:50",
+        "status": "완료",
+        "rowIndex": 3
+      },
+      {
+        "operatorName": "윤서희",
+        "timeRange": "14:50 ~ 15:10",
+        "status": "완료",
+        "rowIndex": 4
+      },
+      {
+        "operatorName": "양혜원",
+        "timeRange": "15:10 ~ 15:30",
+        "status": "완료",
+        "rowIndex": 5
+      }
+    ],
+    "sessionCount": 6
+  },
+  {
+    "expertId": "expert-8",
+    "expertName": "최지호",
+    "expertRole": "PM",
+    "sessions": [
+      {
+        "operatorName": "김하윤",
+        "timeRange": "13:30 ~ 13:50",
+        "status": "완료",
+        "rowIndex": 0
+      },
+      {
+        "operatorName": "박영서",
+        "timeRange": "13:50 ~ 14:10",
+        "status": "완료",
+        "rowIndex": 1
+      },
+      {
+        "operatorName": "김효민",
+        "timeRange": "14:10 ~ 14:30",
+        "status": "완료",
+        "rowIndex": 2
+      },
+      {
+        "operatorName": "신석영",
+        "timeRange": "14:30 ~ 14:50",
+        "status": "완료",
+        "rowIndex": 3
+      },
+      {
+        "operatorName": "조예린",
+        "timeRange": "14:50 ~ 15:10",
+        "status": "완료",
+        "rowIndex": 4
+      },
+      {
+        "operatorName": "박은서",
+        "timeRange": "15:10 ~ 15:30",
+        "status": "완료",
+        "rowIndex": 5
+      }
+    ],
+    "sessionCount": 6
+  }
+]

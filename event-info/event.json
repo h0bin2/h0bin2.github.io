@@ -1,0 +1,14 @@
+{
+  "name": "BDAI Networking Session",
+  "date": "2026-03-01",
+  "startTime": "13:30",
+  "endTime": "15:40",
+  "timelineRules": {
+    "sessionMinutes": 20,
+    "breakMinutes": 10,
+    "breakAfterRound": 3,
+    "ignoreExperts": [
+      "김우형"
+    ]
+  }
+}

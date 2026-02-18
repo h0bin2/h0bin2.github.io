@@ -1,0 +1,42 @@
+[
+  {
+    "id": "expert-1",
+    "name": "김우형",
+    "role": "영업"
+  },
+  {
+    "id": "expert-2",
+    "name": "김주만",
+    "role": "마케팅"
+  },
+  {
+    "id": "expert-3",
+    "name": "김진환",
+    "role": "데이터사이언스"
+  },
+  {
+    "id": "expert-4",
+    "name": "송일선",
+    "role": "HR"
+  },
+  {
+    "id": "expert-5",
+    "name": "안창배",
+    "role": "데이터사이언스"
+  },
+  {
+    "id": "expert-6",
+    "name": "임태균",
+    "role": "PM"
+  },
+  {
+    "id": "expert-7",
+    "name": "최원준",
+    "role": "AI/개발"
+  },
+  {
+    "id": "expert-8",
+    "name": "최지호",
+    "role": "PM"
+  }
+]
