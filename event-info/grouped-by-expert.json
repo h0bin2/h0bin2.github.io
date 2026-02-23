@@ -59,9 +59,15 @@
         "timeRange": "14:50 ~ 15:10",
         "status": "완료",
         "rowIndex": 4
+      },
+      {
+        "operatorName": "박신형",
+        "timeRange": "15:10 ~ 15:30",
+        "status": "완료",
+        "rowIndex": 5
       }
     ],
-    "sessionCount": 5
+    "sessionCount": 6
   },
   {
     "expertId": "expert-3",
@@ -113,7 +119,7 @@
         "rowIndex": 1
       },
       {
-        "operatorName": "김효민",
+        "operatorName": "김상원",
         "timeRange": "14:10 ~ 14:30",
         "status": "완료",
         "rowIndex": 2
@@ -167,9 +173,15 @@
         "timeRange": "14:30 ~ 14:50",
         "status": "완료",
         "rowIndex": 3
+      },
+      {
+        "operatorName": "박신형",
+        "timeRange": "14:50 ~ 15:10",
+        "status": "완료",
+        "rowIndex": 4
       }
     ],
-    "sessionCount": 4
+    "sessionCount": 5
   },
   {
     "expertId": "expert-6",
