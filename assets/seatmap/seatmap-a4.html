@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDAI 좌석 배치도</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+    background: #cbd5e1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px;
+    min-height: 100vh;
+  }
+
+  /* ── A4 가로 (297mm × 210mm) ── */
+  .page {
+    width: 297mm;
+    height: 210mm;
+    background: #ffffff;
+    padding: 14mm 16mm 12mm;
+    display: flex;
+    flex-direction: column;
+    gap: 5mm;
+    position: relative;
+  }
+
+  /* 인쇄 설정 */
+  @media print {
+    body { background: none; padding: 0; }
+    .page {
+      width: 297mm;
+      height: 210mm;
+      padding: 12mm 14mm 10mm;
+      box-shadow: none;
+      page-break-after: always;
+    }
+  }
+  @page { size: A4 landscape; margin: 0; }
+
+  /* ── 헤더 ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 3mm;
+  }
+  .header h1 {
+    font-size: 15pt;
+    font-weight: 800;
+    color: #1e3a8a;
+    letter-spacing: -0.02em;
+  }
+  .header p {
+    font-size: 7.5pt;
+    color: #64748b;
+    margin-top: 1mm;
+    font-weight: 400;
+  }
+
+  /* ── 스크린 (스폰서 없이 전체 너비) ── */
+  .screen {
+    height: 14mm;
+    background: #1e3a8a;
+    border-radius: 5pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 11pt;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+  }
+
+  /* ── 구분선 레이블 ── */
+  .row-label {
+    display: flex;
+    align-items: center;
+    gap: 4mm;
+    font-size: 7pt;
+    font-weight: 600;
+    color: #94a3b8;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .row-label::before, .row-label::after {
+    content: '';
+    flex: 1;
+    height: 0.5pt;
+    background: #e2e8f0;
+  }
+
+  /* ── 좌석 행 ── */
+  .seat-row {
+    display: flex;
+    gap: 4mm;
+    align-items: stretch;
+  }
+
+  /* ── 좌석 카드 ── */
+  .card {
+    flex: 1;
+    border: 1.5pt solid #bfdbfe;
+    border-radius: 6pt;
+    padding: 3mm 3mm 4mm;
+    text-align: center;
+    background: #fafcff;
+    position: relative;
+  }
+  .card-bar {
+    position: absolute;
+    top: 0; left: 5mm; right: 5mm;
+    height: 2pt;
+    background: #2563eb;
+    border-radius: 0 0 3pt 3pt;
+  }
+  /* 역할 컬러 태그 */
+  .role-tag {
+    display: inline-block;
+    padding: 0.8mm 2.5mm;
+    border-radius: 3pt;
+    font-size: 7pt;
+    font-weight: 700;
+    margin: 3mm auto 2mm;
+    letter-spacing: 0.02em;
+  }
+  .nm {
+    font-size: 13pt;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+    margin-bottom: 1mm;
+  }
+  .co {
+    font-size: 7pt;
+    font-weight: 600;
+    color: #1d4ed8;
+    background: #eff6ff;
+    border: 1pt solid #bfdbfe;
+    display: inline-block;
+    padding: 0.5mm 3mm;
+    border-radius: 20pt;
+  }
+
+  /* ── 기둥 ── */
+  .pillar {
+    width: 11mm;
+    background: #f1f5f9;
+    border: 1.5pt solid #cbd5e1;
+    border-radius: 5pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .pillar span {
+    font-size: 7pt;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── 하단 영역 ── */
+  .bottom-row {
+    display: flex;
+    gap: 4mm;
+    align-items: stretch;
+    height: 18mm;
+    margin-top: auto;
+  }
+  .staff {
+    flex: 1;
+    border: 1.5pt dashed #cbd5e1;
+    border-radius: 6pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1mm;
+    background: #f8fafc;
+  }
+  .staff b { font-size: 10pt; font-weight: 700; color: #475569; }
+  .staff small { font-size: 7pt; color: #94a3b8; }
+  .mid-col {
+    width: 28mm;
+    display: flex;
+    flex-direction: column;
+    gap: 2mm;
+  }
+  .org {
+    flex: 1;
+    border: 1.5pt solid #cbd5e1;
+    border-radius: 5pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    font-size: 9pt;
+    font-weight: 700;
+    color: #475569;
+  }
+  .ent {
+    background: #1e3a8a;
+    border-radius: 5pt;
+    padding: 1.5mm 0;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+  }
+
+  /* ── 푸터 ── */
+  .footer {
+    border-top: 0.5pt solid #e2e8f0;
+    padding-top: 2mm;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer span { font-size: 7pt; color: #94a3b8; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 헤더 -->
+  <div class="header">
+    <div>
+      <h1>BDAI 네트워킹 세션 &middot; 좌석 배치도</h1>
+      <p>BDAI Networking Session &mdash; Seating Chart</p>
+    </div>
+  </div>
+
+  <!-- 스크린 -->
+  <div class="screen">스&nbsp;&nbsp;크&nbsp;&nbsp;린</div>
+
+  <!-- 1열 -->
+  <div class="row-label">1 열 좌석</div>
+  <div class="seat-row">
+    <div class="card">
+      <div class="card-bar"></div>
+      <div class="nm">김우형</div>
+      <div class="role-tag" style="background:#ecfeff;color:#0e7490;border:1pt solid #a5f3fc">영업 / 비즈니스</div>
+      <div class="co">CJ OliveNetworks</div>
+    </div>
+    <div class="card">
+      <div class="card-bar"></div>
+      <div class="nm">김주만</div>
+      <div class="role-tag" style="background:#f0fdf4;color:#15803d;border:1pt solid #86efac">마케팅</div>
+      <div class="co">잡코리아</div>
+    </div>
+    <div class="card">
+      <div class="card-bar"></div>
+      <div class="nm">김진환</div>
+      <div class="role-tag" style="background:#f5f3ff;color:#6d28d9;border:1pt solid #c4b5fd">데이터사이언스</div>
+      <div class="co">위니브</div>
+    </div>
+    <div class="card">
+      <div class="card-bar"></div>
+      <div class="nm">송일선</div>
+      <div class="role-tag" style="background:#fff7ed;color:#c2410c;border:1pt solid #fdba74">HR</div>
+      <div class="co">(주)LS</div>
+    </div>
+  </div>
+
+  <!-- 2열 -->
+  <div class="row-label">2 열 좌석</div>
+  <div class="seat-row">
+    <div class="card">
+      <div class="card-bar"></div>
+      <div class="nm">안창배</div>
+      <div class="role-tag" style="background:#f5f3ff;color:#6d28d9;border:1pt solid #c4b5fd">데이터사이언스</div>
+      <div class="co">클로브</div>
+    </div>
+    <div class="pillar"><span>기둥</span></div>
+    <div class="card">
+      <div class="card-bar"></div>
+      <div class="nm">임태균</div>
+      <div class="role-tag" style="background:#fdf2f8;color:#be185d;border:1pt solid #f9a8d4">PM</div>
+      <div class="co">비바리퍼블리카(토스)</div>
+    </div>
+    <div class="card">
+      <div class="card-bar"></div>
+      <div class="nm">최원준</div>
+      <div class="role-tag" style="background:#fef2f2;color:#b91c1c;border:1pt solid #fca5a5">AI / 개발</div>
+      <div class="co">네카쿠라배</div>
+    </div>
+    <div class="pillar"><span>기둥</span></div>
+    <div class="card">
+      <div class="card-bar"></div>
+      <div class="nm">최지호</div>
+      <div class="role-tag" style="background:#fdf2f8;color:#be185d;border:1pt solid #f9a8d4">PM</div>
+      <div class="co">포스페이스랩</div>
+    </div>
+  </div>
+
+  <!-- 하단 -->
+  <div class="bottom-row">
+    <div class="staff">
+      <b>운영진 대기석</b>
+      <small>Staff Area</small>
+    </div>
+    <div class="mid-col">
+      <div class="org">조직문화팀</div>
+      <div class="ent">입 구</div>
+    </div>
+    <div class="staff">
+      <b>운영진 대기석</b>
+      <small>Staff Area</small>
+    </div>
+  </div>
+
+  <!-- 푸터 -->
+  <div class="footer">
+    <span>※ 좌석 배치는 당일 변경될 수 있습니다.</span>
+    <span>BDAI &middot; 2026</span>
+  </div>
+
+</div>
+</body>
+</html>
